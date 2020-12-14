@@ -8,6 +8,9 @@ driver:
   privileged: true
   run_command: /lib/systemd/systemd
 
+# Using the commit title as a comment to guarantee change for new commit/push:
+# feat(gitlab-ci): use GitLab CI as Travis CI replacement (2020-W50_02)
+
 # Make sure the platforms listed below match up with
 # the `env.matrix` instances defined in `.travis.yml`
 platforms:
@@ -150,10 +153,9 @@ verifier:
 suites:
   - name: default
     excludes:
-      - opensuse-leap-151-master-py3
-      - opensuse-leap-151-3000-3-py3
-      - opensuse-leap-151-2019-2-py3
-      - opensuse-leap-151-2018-3-py2
+      - opensuse-leap-152-master-py3
+      - opensuse-leap-152-3000-3-py3
+      - opensuse-leap-152-2019-2-py3
     provisioner:
       state_top:
         base:
@@ -173,10 +175,9 @@ suites:
         - path: test/integration/default
   - name: suse
     includes:
-      - opensuse-leap-151-master-py3
-      - opensuse-leap-151-3000-3-py3
-      - opensuse-leap-151-2019-2-py3
-      - opensuse-leap-151-2018-3-py2
+      - opensuse-leap-152-master-py3
+      - opensuse-leap-152-3000-3-py3
+      - opensuse-leap-152-2019-2-py3
     provisioner:
       state_top:
         base:
