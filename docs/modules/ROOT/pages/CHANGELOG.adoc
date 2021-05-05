@@ -1,0 +1,110 @@
+= Changelog
+
+:sectnums!:
+
+== link:++https://github.com/saltstack-formulas/varnish-formula/compare/v0.4.0...v0.4.1++[0.4.1^] (2020-12-16)
+
+=== Continuous Integration
+
+* *gemfile.lock:* add to repo with updated `Gemfile` [skip ci]
+(https://github.com/saltstack-formulas/varnish-formula/commit/aa44607c746bf34dbe0acdfc3c92677fa5830b9c[aa44607^])
+* *gitlab-ci:* use GitLab CI as Travis CI replacement
+(https://github.com/saltstack-formulas/varnish-formula/commit/e3f575e5bdd86d836ab987b3d852ddcfb799f298[e3f575e^])
+* *kitchen:* use `saltimages` Docker Hub where available [skip ci]
+(https://github.com/saltstack-formulas/varnish-formula/commit/54cb631ff2ee17e7f9fac5b7d787a321a6da8036[54cb631^])
+* *kitchen+travis:* add new platforms [skip ci]
+(https://github.com/saltstack-formulas/varnish-formula/commit/31346ee139840f1f87e0b08eb3a927b4c5e41538[31346ee^])
+* *kitchen+travis:* adjust matrix to add `3000.2` & remove `2018.3`
+ [skip ci]
+(https://github.com/saltstack-formulas/varnish-formula/commit/cb7c4be885eabe3445c89bab5be13ff31c02ddb6[cb7c4be^])
+* *kitchen+travis:* adjust matrix to add `3000.3` [skip ci]
+(https://github.com/saltstack-formulas/varnish-formula/commit/66bdad362704f445da917e4c0c5065a42ce4277e[66bdad3^])
+* *kitchen+travis:* adjust matrix to update `3000` to `3000.1` [skip ci]
+(https://github.com/saltstack-formulas/varnish-formula/commit/7a36cb10f83f235de351fdb7cb20b4de56ea379c[7a36cb1^])
+* *kitchen+travis:* remove `master-py2-arch-base-latest` [skip ci]
+(https://github.com/saltstack-formulas/varnish-formula/commit/589931284b5b0e3e4dc48fb01e85a35bd3a4b684[5899312^])
+* *pre-commit:* add to formula [skip ci]
+(https://github.com/saltstack-formulas/varnish-formula/commit/67c5b5a721bad0f0b5e889be1050d829b9a2b42e[67c5b5a^])
+* *pre-commit:* enable/disable `rstcheck` as relevant [skip ci]
+(https://github.com/saltstack-formulas/varnish-formula/commit/a96852d95f0e363293a529efcc1a5097daf320ed[a96852d^])
+* *pre-commit:* finalise `rstcheck` configuration [skip ci]
+(https://github.com/saltstack-formulas/varnish-formula/commit/ea962cf93a65a501f218389d16d60c29c2db1fc1[ea962cf^])
+* *travis:* add notifications => zulip [skip ci]
+(https://github.com/saltstack-formulas/varnish-formula/commit/fd320d64bf4ff53f7c6b611cd8277c61a5e8f732[fd320d6^])
+* *workflows/commitlint:* add to repo [skip ci]
+(https://github.com/saltstack-formulas/varnish-formula/commit/5288992aa7b7bc4d467d52a561b1688e94533aaf[5288992^])
+
+=== Documentation
+
+* *readme:* fix `rstcheck` violation [skip ci]
+(https://github.com/saltstack-formulas/varnish-formula/commit/e829357313727f80a7a061994d6396283538fe47[e829357^]),
+closes
+https://github.com//travis-ci.org/github/myii/varnish-formula/builds/731609027/issues/L259[/travis-ci.org/github/myii/varnish-formula/builds/731609027#L259^]
+
+== link:++https://github.com/saltstack-formulas/varnish-formula/compare/v0.3.0...v0.4.0++[0.4.0^] (2020-04-01)
+
+=== Continuous Integration
+
+* *gemfile:* restrict `train` gem version until upstream fix [skip ci]
+(https://github.com/saltstack-formulas/varnish-formula/commit/b94e9c21087ace76489710fd4ddfc89c59b9064c[b94e9c2^])
+* *kitchen:* avoid using bootstrap for `master` instances [skip ci]
+(https://github.com/saltstack-formulas/varnish-formula/commit/788dd7bc3ae0192d1adaddb729915344918cc638[788dd7b^])
+* *kitchen+travis:* adjust matrix to add `3000` & remove `2017.7`
+(https://github.com/saltstack-formulas/varnish-formula/commit/3ebb3542cb7d597358fbacd936dbd1514472948d[3ebb354^])
+* *travis:* quote pathspecs used with `git ls-files` [skip ci]
+(https://github.com/saltstack-formulas/varnish-formula/commit/bcbf380bf415e29ebee1071530641c133aec1041[bcbf380^])
+* *travis:* run `shellcheck` during lint job [skip ci]
+(https://github.com/saltstack-formulas/varnish-formula/commit/729e85013cbc4d7dc4b09952f4ea77f27fac6b52[729e850^])
+* *travis:* use `major.minor` for `semantic-release` version [skip ci]
+(https://github.com/saltstack-formulas/varnish-formula/commit/4b8c25bbdd2ef64a3ed193096e4763f7c276457f[4b8c25b^])
+
+=== Features
+
+* *ng:* add `retry_options` to fix installation on `centos-8`
+(https://github.com/saltstack-formulas/varnish-formula/commit/90bd91c43f98a82df025fb73a34c12c2f6c26b1e[90bd91c^])
+
+== link:++https://github.com/saltstack-formulas/varnish-formula/compare/v0.2.0...v0.3.0++[0.3.0^] (2019-11-25)
+
+=== Bug Fixes
+
+* *ng:* fix config for Amazon Linux 2
+(https://github.com/saltstack-formulas/varnish-formula/commit/98a176c96872bd1abe448b9ca6c8c85d33415cfe[98a176c^])
+* *ng:* fix config for Arch Linux
+(https://github.com/saltstack-formulas/varnish-formula/commit/aac37897a897e63df65e1d94e452e78387b90cbb[aac3789^])
+* *ng:* fix config for CentOS 8
+(https://github.com/saltstack-formulas/varnish-formula/commit/faf695887affe497fa1edce318707564d0a2931c[faf6958^])
+* *ng:* fix config for Fedora 30 & 31
+(https://github.com/saltstack-formulas/varnish-formula/commit/9ddbcd5944d02cee4b6ad07c9d8e58d6e50f5378[9ddbcd5^])
+* *ng:* fix config for OpenSuse Leap 15.1
+(https://github.com/saltstack-formulas/varnish-formula/commit/ca8797c811aadc3f8d059b9895f0ae48a2a861a8[ca8797c^])
+* *ng/default.vcl:* add new template for `ng`
+(https://github.com/saltstack-formulas/varnish-formula/commit/a3ed40478c900db640c50a8b39391f0cd30e97b9[a3ed404^])
+* *ng/repo.sls:* add inline EPEL repo configuration
+(https://github.com/saltstack-formulas/varnish-formula/commit/e593d9231d769d63043b5e2fd996a3f77bdf16b0[e593d92^])
+* *ng/repo.sls:* ensure required Debian packages are installed
+(https://github.com/saltstack-formulas/varnish-formula/commit/c5fb7feaf20d80d2d10de0e0c3fddd0f800451a1[c5fb7fe^])
+* *ng/services.sls:* ensure logging service waits for main service
+(https://github.com/saltstack-formulas/varnish-formula/commit/c30dccf76d971654893f3ad870cda7008ecac1cf[c30dccf^])
+* *salt-lint:* fix all errors
+(https://github.com/saltstack-formulas/varnish-formula/commit/b0df59d5a9500b769e209e3d7eb4276dd27af260[b0df59d^])
+* *yamllint:* fix all errors
+(https://github.com/saltstack-formulas/varnish-formula/commit/79ed36b2e947bf0acb3e496211fe84d67a26fa18[79ed36b^])
+
+=== Documentation
+
+* *readme:* convert from `md` => `rst`
+(https://github.com/saltstack-formulas/varnish-formula/commit/de88a39fd3b3d6180508eda2a9848364b5826484[de88a39^])
+* *readme:* modify according to standard structure
+(https://github.com/saltstack-formulas/varnish-formula/commit/0f954cec93ce3521894d0088ae5e653a01f95c7d[0f954ce^])
+* move `README` and `TOFS_pattern` to `docs` sub-directory
+(https://github.com/saltstack-formulas/varnish-formula/commit/2d38bb5bea6077d9539ec109362605681e3069da[2d38bb5^])
+
+=== Features
+
+* *semantic-release:* implement for this formula
+(https://github.com/saltstack-formulas/varnish-formula/commit/f6edbba42156a858da219d8fe6348879ce7b0029[f6edbba^])
+
+=== Tests
+
+* *pillars:* provide test pillars and updated `pillar.example`
+(https://github.com/saltstack-formulas/varnish-formula/commit/63881e8645f4285b69586996f6850c5ccb550868[63881e8^])
